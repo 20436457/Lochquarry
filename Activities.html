@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="Styles/Activities.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js"></script>
+</head>
+
+
+
+    <body>
+
+
+
+        <header>
+           <img class="website_banner" src="Images/LochquarryBanner.png" alt="Lochquarry Outdoor Centre Banner">
+        </header>
+
+
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="CentreInformation.html">CENTRE INFORMATION</a></li>
+                        <li><a href="Activities.html">ACTIVITIES</a></li>
+                        <li><a href="Staff.html">STAFF INFORMATION</a></li>
+                    </ul>
+                </nav> 
+
+
+
+        <main>
+            <div class="opening_paragraph">
+                <h1>Activities on offer at Lochquarry include:</h1>
+                <h2><span id="typedText"></span></h2>
+                <h3>Use the links below to explore more</h3>
+            </div>
+                
+        <a href=WaterBasedActivities.html target="_blank" >
+            <div class="ActivityInformation">
+                <div class="atropos my-atropos">
+                    <div class="atropos-scale">
+                        <div class="atropos-rotate">
+                            <div class="atropos-inner">
+                                <img class="staff_images" src="Images/Activities/water/kayaking_2.jpg" alt="Water Based Activities" data-atropos-offset="-5">
+                            </div>
+                        </div>
+                    </div>
+                </div></a>
+            <p>Water Based Activities</p>
+            </div>
+            
+        <a href=LandBasedActivities.html target="_blank" >
+            <div class="ActivityInformation">
+                <div class="atropos my-atropos2">
+                    <div class="atropos-scale">
+                        <div class="atropos-rotate">
+                            <div class="atropos-inner">
+                                <img class="staff_images" src="Images/Activities/land/hillwalking_3(1).jpg" alt="Land Based Activities" data-atropos-offset="-5">
+                            </div>
+                        </div>
+                    </div>
+                </div></a>
+            <p>Land Based Activities</p>
+            </div>
+
+            
+            <div class="ActivityInformation">
+                <a href=RopeBasedActivities.html target="_blank">
+                    <div class="atropos my-atropos3">
+                    <div class="atropos-scale">
+                        <div class="atropos-rotate">
+                            <div class="atropos-inner">
+                                <img class="staff_images" src="Images/Activities/rope/climbing_2.jpg" alt="Rope Based Activities" data-atropos-offset="-5">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <p>Rope Based Activities</p>
+            </div>
+        </main>
+       
+
+
+        <footer>
+            Created by Matt Taylor
+        </footer>
+
+        <script>
+             const typed = new Typed("#typedText", {
+                strings: ["Hillwalking", "Archery", "Axe Throwing", "Orienteering", "Abseiling", "Climbing", "Pole Climbing", "Canoeing", "Kayaking", "Powerboating"],
+                typeSpeed: 100,
+                backSpeed: 40,
+                backDelay: 1200,
+                shuffle: true,
+                loop: true,
+
+            });
+
+            const myAtropos = Atropos({
+                el: ".my-atropos",
+                activeOffset: 40,
+                shadowScale: 1.05
+            });
+            const myAtropos2 = Atropos({
+                el: ".my-atropos2",
+                activeOffset: 40,
+                shadowScale: 1.05
+            });
+            const myAtropos3 = Atropos({
+                el: ".my-atropos3",
+                activeOffset: 40,
+                shadowScale: 1.05
+            });
+
+        </script>
+
+
+
+    </body>
+</html>
