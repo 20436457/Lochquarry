@@ -1,0 +1,278 @@
+header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+
+.website_banner{
+    width: 95vw;
+    max-height: 300px;
+    border-radius: 40px;
+    border: 5px solid black;
+    margin-top: 10px;
+}
+
+
+
+body{
+    background-color: rgba(255, 208, 0, 0.600);
+    margin: 0;
+}
+
+
+
+nav{
+    background-color: rgba(255, 140, 0, 1);
+    border-radius: 10px;
+    font-size: 10pt;
+    border: 3px solid black;
+    margin-bottom: 20px;
+    margin-right: 200px;
+    margin-left: 200px;
+    max-width: 90vw;
+    position: sticky;
+    top: 20px;
+    padding: 10px
+
+}
+
+
+   nav ul{
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+        list-style: none;
+        margin: 0;
+        padding:  0;
+    }
+
+
+   nav li{
+        display: inline;
+    }
+
+
+   nav a{
+        color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border:3px solid transparent;
+    }
+
+
+
+   nav a:hover{
+        background-color: rgb(255, 208, 0);
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    border: 3px solid black
+        
+    }
+    
+
+
+.staff_cards{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-bottom: 20px;
+}
+
+
+
+.staff_card{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 140, 0, 0.5);
+    border-radius: 10px;
+    border: 3px solid black;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20)
+}
+
+
+
+.staff_images{
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+.card-text{
+    flex: 1;
+    padding: 1rem 1.25rem;
+    font-family: sans-serif;
+    text-align: center;
+    border-top: 3px solid black;
+}
+
+.card-text h2{
+    font-size: 30pt;
+
+}
+
+.card-text h3{
+    font-size: 20pt;
+    font-weight: 100;
+}
+
+.card-text h4{
+    font-size: 15pt;
+    font-weight: 100;
+}
+
+.card-text p{
+    font-size: 10pt;
+    font-weight: 100;
+}
+
+.opening_paragraph{
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 2.0;
+    font-size: 20pt;
+    background-color: rgba(255, 140, 0, 0.5);
+    width: 80vw;
+    border-radius: 10pt;
+    border: 3px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+
+
+.customer_review_box{
+    border-radius: 10pt;
+    border: 3px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 70vw;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+.customer_review_box blockquote{
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    max-width: 60ch;
+    margin-inline: auto;
+}
+
+#review{
+    font-style: italic;
+    font-size: 20pt;
+    line-height: 1.6;
+    margin: 0 0 0.75rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#review::before{ content: "\201C";}
+#review::after { content: "\201D";}
+
+#reviewAuthor{
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13pt;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.customer_review_box h1{
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+
+
+
+.customer_review_box p{
+    font-style: italic;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 2.0;
+    font-size: 20pt;
+    
+}
+
+
+
+.soac{
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1.75;
+    font-size: 10pt;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 10pt;
+    border: 3px solid black;
+    padding: 15px;
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+
+
+.btn{
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: rgb(255, 0, 0);
+    border: 3px solid black;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+
+
+.btn:hover{
+    background: white;
+    padding: 0.6rem 1.2rem;
+}
+
+
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: large;
+    background-color: rgba(255, 140, 0, 1);
+    border-radius: 10pt;
+    border: 3px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer:hover{
+    background: rgb(21, 255, 0);
+    cursor: pointer;
+    padding: 15px;
+}

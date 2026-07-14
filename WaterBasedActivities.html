@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Based Activities</title>
+    <link rel="stylesheet" href="Styles/ActivitiesInfo.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.waves.min.js"></script>
+</head>
+<body>
+    <header>
+            <img class="website_banner" src="Images/LochquarryBanner.png" alt="Lochquarry Outdoor Centre Banner">
+    </header>
+
+
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="CentreInformation.html">CENTRE INFORMATION</a></li>
+            <li><a href="Activities.html">ACTIVITIES</a></li>
+            <li><a href="Staff.html">STAFF INFORMATION</a></li>
+        </ul>
+    </nav>
+
+    
+    
+    
+    
+    <main>
+        <div class="sections">
+
+            <section class="split">
+                <div class="text-panel">
+                    <h1>Kayaking</h1>
+                    <p>Have a go at paddling, rolling and rafting in one of our brand new kayaks <br> Max group size 8 <br> Ages 8+</p>
+                </div>
+
+                <div class="image_pair">
+                        <img src="Images/Activities/water/RSkayaking_1.jpg" alt="Kayaking">
+                        <img src="Images/Activities/water/RSkayaking_2.jpg" alt="Kayaking">
+                </div>
+            </section>
+
+            <section class="split">
+                <div class="text-panel">
+                    <h1>Canoeing</h1>
+                    <p>Work single-handedly or in pairs to canoe the length of Lochquarry. You can even take a picnic with you and explore some of the Loch’s islands <br> Max group size 8 boats (up to 16 people) <br> Ages 6+</p>
+                </div>
+
+                <div class="image_pair">
+                    <img src="Images/Activities/water/RScanoeing_1.jpg" alt="Canoeing">
+                    <img src="Images/Activities/water/RScanoeing_2.jpg" alt="Canoeing">
+                </div>
+            </section>
+
+            <section class="split">
+                <div class="text-panel">
+                    <h1>Powerboating</h1>
+                    <p>Take control of one of the Centre’s two RIBs out on Lochquarry and try your hand powerboating <br> Max group size 6 <br> Ages 12+</p>
+                </div>
+
+                <div class="image_pair">
+                    <img src="Images/Activities/water/RSpowerboating_1.jpg" alt="Powerboating">
+                    <img src="Images/Activities/water/RSpowerboating_2.jpg" alt="Powerboating">
+                </div>
+            </section>
+
+        </div>
+
+            <section class="customer_review_box" id="vantaBox">
+                <h1>Customer Reviews</h1>
+                <blockquote>
+                <p id="review"></p>
+                <cite id="reviewAuthor"></cite>
+            </blockquote>
+            </section>
+
+            <div class="soac">
+                Accessing the outdoors in Scotland must be done responsibly <br> Please review the Scottish Outdoor Access Code before visiting Lochquarry Outdoor Centre <br> Access it by clicking here: <br> <br> <a class="btn" href="https://www.outdooraccess-scotland.scot/" target="_blank"> Click Here </a>
+            </div>
+    </main>
+       <footer id="confettiButton">Created by Matt Taylor</footer>
+
+    
+    
+<script>
+  const reviews = [
+    { quote: "We had a great time and loved all the different activities that we did", author: "8th Gourock Guides"},
+    { quote: "The Scouts loved every second of it, especially the powerboating", author: "Martin Bainbridge, Scout Leader"},
+    { quote: "I would definitely come back", author: "Kelly, aged 9"},
+    { quote: "Thank you to all the staff who worked so hard, in awful weather, to make sure that all the pupils had an amazing experience", author: "Mrs Kahn, Hillend Primary School"},
+    { quote: "Five stars, it was great", author: "Joe, aged 14"},
+    { quote: "I was really scared about the abseiling but the instructor Mike was really encouraging and helped me do it, thanks Mike", author: "Sophie, aged 10"},
+    { quote: "The archery was brilliant, but not as good as axe throwing, I never thought we’d be allowed to do that! I got one of my axes right in the middle of the target", author: "Scott, aged 13"},
+    { quote: "The kids had a ball and didn’t want to leave", author: "Mr Evans, PE teacher"},
+  ];
+
+  const { quote, author } = reviews[Math.floor(Math.random() * reviews.length)];
+  document.getElementById("review").textContent = quote;
+  document.getElementById("reviewAuthor").textContent = author;
+
+  const confettiButton = document.getElementById("confettiButton");
+
+confettiButton.addEventListener("click", function () {
+  confetti({
+    particleCount: 600,
+    spread: 180,
+    origin: { y: 0.9 }
+  });
+});
+
+VANTA.WAVES({
+  el: "#vantaBox",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 300.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xff8c00,
+  shininess: 35,
+  waveHeight: 18,
+  waveSpeed: 0.8
+});
+</script>
+</body>
+</html>
